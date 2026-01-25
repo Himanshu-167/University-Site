@@ -17,11 +17,14 @@ const App = () => (
     <TooltipProvider>
       <UserProvider>
         <Toaster />
-        <HashRouter>
+<HashRouter>
   <Routes>
-    <Route path="/" element={<Index />} />
-    <Route path="/dashboard" element={<Dashboard />} />
-    <Route path="*" element={<NotFound />} />
+   <Route path="/" element={<Index />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/attendance" element={<Attendance />} />
+            <Route path="/fees" element={<Fees />} />
+            <Route path="/communication" element={<Communication />} />
+            <Route path="*" element={<NotFound />} />
   </Routes>
 </HashRouter>
       </UserProvider>
